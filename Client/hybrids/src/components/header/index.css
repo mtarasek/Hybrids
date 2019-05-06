@@ -1,0 +1,48 @@
+#header {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#title {
+    font-family: Cambria;
+    font-size: 3em;
+    color: rgb(56, 56, 100) ;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(29, 89, 112, 0.1);
+    padding: 5%;
+}
+
+nav li {
+    display: flex;
+    display: inline-block;
+    padding: 7px;
+    margin: 3px;
+    border-radius: 4%;
+    font-size: 1.2em;
+    color: black;
+    border: black solid 1px;
+}
+
+a {
+    justify-content: center;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+#navigation .selected{
+    color: rgb(133, 184, 99);
+    
+}

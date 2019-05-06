@@ -1,0 +1,41 @@
+#hybridStepBySTepcontainer{
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+
+}
+
+.subtitle {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3%;
+    border: dotted black 2px;
+    width: 80%;
+}
+
+.text {
+    font-size: 1.2rem;
+    padding: 2%;
+    text-align: center;
+}
+
+#images {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image {
+    margin: 0 auto;
+    text-align: center;
+    height: 400px;
+    display: inline-block;
+    width: 350px;
+    opacity: 0.8;
+}
+
+.stepBySTepImage{
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+ 
+}

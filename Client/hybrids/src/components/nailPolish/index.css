@@ -1,0 +1,11 @@
+#nailPolish{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    padding: 1%;
+}
+
+#nailPolish img{
+    height: 200px;
+    width: 200px;
+}
