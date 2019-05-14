@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import NailPolish from '../../components/nailPolish';
 
 import './index.css'
+import { GetAllNailPolishes } from '../../services/hybridservice';
+
 export default class HybridNailPolishes extends Component {
     constructor(props) {
         super(props);
@@ -9,9 +11,7 @@ export default class HybridNailPolishes extends Component {
     }
 
     componentDidMount() {
-
-        fetch('https://localhost:44326/api/inspiration')
-            .then(resp => resp.json())
+        GetAllNailPolishes()
             .then(resp => {
                 this.setState({ nailPolishes: resp })
             })
@@ -21,7 +21,7 @@ export default class HybridNailPolishes extends Component {
         if (this.state.nailPolishes.length === 0) { return "Loading..."; }
 
         var nailPolishesList = this.state.nailPolishes.map(item => {
-            return <NailPolish image={item.image} name={item.name} company={item.company} />
+            return <NailPolish key={"nailPolish-" + item.id} image={item.image} name={item.colorName} company={item.companyName} />
         });
 
         return (

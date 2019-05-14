@@ -21,12 +21,12 @@ export default class Home extends Component {
         <section>
           <h2>Macicure hybrydowy to:</h2>
           <ul>
-            <li>do 21 dni <b>trwałości</b></li>
-            <li><b>bogata paleta</b>kolorów</li>
-            <li><b>piękny połysk,</b>który nie maleje</li>
-            <li><b>odporność</b>na uszkodzenia mechaniczne</li>
-            <li>możliwość tworzenia<b>niepowtarzalnych stylizacji</b></li>
-            <li>możliwość zapuszczenia <b>długich,</b>pięknych paznokci</li>
+            <li>do 21 dni <b> trwałości</b></li>
+            <li><b>bogata paleta</b> kolorów</li>
+            <li><b>piękny połysk,</b> który nie maleje</li>
+            <li><b>odporność</b> na uszkodzenia mechaniczne</li>
+            <li>możliwość tworzenia<b> niepowtarzalnych stylizacji</b></li>
+            <li>możliwość zapuszczenia <b> długich,</b> pięknych paznokci</li>
           </ul>
         </section>
 

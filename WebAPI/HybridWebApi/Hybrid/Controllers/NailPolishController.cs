@@ -11,20 +11,19 @@ namespace HybridWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class InspirationController : ControllerBase
+    public class NailPolishController : ControllerBase
     {
         private IHybridNailPolishesRepository _hybridNailPolishes;
-
-        public InspirationController(IHybridNailPolishesRepository hybridNailPolishes)
+        public NailPolishController(IHybridNailPolishesRepository hybridNailPolishes)
         {
             _hybridNailPolishes = hybridNailPolishes;
         }
-
         [HttpGet]
-        public IActionResult GetAllInspirations()
+        public IActionResult GetAllNailPolish()
         {
-            var inspirations = _hybridNailPolishes.GetInspirations();
-            return Ok(inspirations);
+            var hybrids = _hybridNailPolishes.GetNailPolishes();
+            return Ok(hybrids);
         }
     }
+
 }
